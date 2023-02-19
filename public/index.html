@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="img/logosite.png" rel="icon" width="10" height="10">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Gerencial - Dulino RP</title>
+    <script>
+        function show(id) {
+          // Esconde todas as páginas
+          document.getElementById('terminal').style.display = 'none';
+          document.getElementById('servidor').style.display = 'none';
+          document.getElementById('link1').style.display = 'none';
+          document.getElementById('link2').style.display = 'none';
+      
+          // Exibe a página selecionada
+          document.getElementById(id).style.display = 'block';
+        }
+      </script>
+</head>
+<body style="margin: 0; padding: 0;">
+    <header style="
+        height: 80px; 
+        background-color: rgb(0, 89, 255);
+    ">
+
+    </header>
+
+    <main style="
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+    "> 
+
+        <section style="
+            width: 20%;
+            height: 800px;
+            border-right-width: 1px;
+            /* border-right-color: rgb(204, 204, 204);
+            border-right-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(204, 204, 204);
+            border-bottom-right-radius: 20px;
+            border-bottom-style: solid; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        ">
+        
+            <div class="card" style="width: 18rem; height: 750px;">
+                <img style="margin-top: 40px;" src="img/vps.png" class="card-img-top" alt="Servidor VPS">
+                <div class="card-body">
+                    <h5 class="card-title">Monitoramento</h5>
+                    <p class="card-text">Monitoramento 24/7 para manter seu VPS totalmente monitorado e confiável, para que você fique tranquilo.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="#" class="btn btn-outline-primary">Discord</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="btn btn-outline-primary">Servidor</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="btn btn-outline-primary">Parceiro</a>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <h5 class="card-title">Criador</h5>
+                    <a href="https://github.com/thaynison" class="btn btn-outline-success">Thaynison</a>
+                </div>
+            </div>
+
+        </section>
+
+        
+        <section style="
+            width: 80%; 
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        ">
+        
+
+            <div class="card text-center" style="width: 90%; height: 750px;">
+                <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="true" href="javascript:show('terminal')">Terminal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:show('servidor')">Servidor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:show('link1')">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:show('link2')">Link</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="card-body">
+                    <div id="terminal" style="display: block;">
+                        <div id="terminal-container" class="border rounded p-4" 
+                        style="
+                            width: 100%;
+                            height: 665px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            margin-right: 10px;
+                        ">
+                        
+
+                            <div class="card" style="width: 18rem;">
+                                <img style="margin-top: 10px" src="img/processadores.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Processador</h5>
+                                    <p class="card-text">32 / 64</p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img style="margin-top: 10px" src="img/ram.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Memoria Ram</h5>  
+                                    <p class="card-text">4x32 GB / 4300 MHZ</p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img style="margin-top: 10px" src="img/hd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Armazenamento</h5>
+                                    <p class="card-text">4TB SSD NVME M.2</p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img style="margin-top: 10px" src="img/internet.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Conexão</h5>
+                                    <p class="card-text">1 Gbps | 40% DDOS</p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div id="servidor" style="display: none;">
+                        // Conteúdo da página Servidor
+                    </div>
+                    <div id="link1" style="display: none;">
+                        // Conteúdo da página Link1
+                    </div>
+                    <div id="link2" style="display: none;">
+                        // Conteúdo da página Link2
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+<style>
+    /* text area */
+    .xterm-helper-textarea {
+       
+    } 
+    .xterm-text-layer {
+        width: 1000px;
+    }
+    
+</style>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Bot Criado para gerenciar o discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Thaynison#2809",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "discord.js": "^14.7.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fivem-api": "^1.5.0",
+    "fivem-api.js": "^1.0.4",
+    "glob": "^7.2.3",
+    "mysql": "^2.18.1",
+    "net": "^1.0.2",
+    "node-pty": "^0.10.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.6.0",
+    "socket.io-client": "^4.5.4",
+    "term.js": "^0.0.7",
+    "util": "^0.12.5",
+    "xterm": "^5.1.0"
+  }
+}
