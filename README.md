@@ -1,6 +1,6 @@
 
 <h1 align="center">Olá 👋, Me chamo Lilizinha</h1>
-<h3 align="center">Sou programadora Fullstack da Empresa Thaynison Soluções</h3>
+<h3 align="center">Sou programadora Fullstack</h3>
 
 - 👨‍💻 Todos os meus projetos estão disponíveis aqui mesmo no meu repositório.
 - 📫 Contato **cthaynison@outlook.com.br.**
